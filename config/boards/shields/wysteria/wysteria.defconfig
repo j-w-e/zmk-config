@@ -1,0 +1,6 @@
+if SHIELD_JWE_WYST
+
+config ZMK_KEYBOARD_NAME
+    default "Wysteria"
+
+endif
