@@ -23,4 +23,17 @@
             , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    encoder_1: encoder_1 {
+        compatible = "alps,ec11";
+        label = "Encoder 1";
+        a-gpios = <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        resolution = <4>;
+        status = "disabled";
+    };
+};
+
+&left_encoder {
+    status = "okay";
 };

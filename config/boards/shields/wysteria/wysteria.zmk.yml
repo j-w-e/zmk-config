@@ -7,7 +7,7 @@ requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
-  # - encoder
+  - encoder
 # siblings:
 #   - corne_left
 #   - corne_right
