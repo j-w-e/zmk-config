@@ -44,7 +44,7 @@
         label = "LEFT_ENCODER";
         a-gpios = <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        resolution = <4>;
+        resolution = <1>;
         status = "disabled";
     };
 
