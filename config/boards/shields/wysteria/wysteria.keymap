@@ -1,6 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+nice_view_spi: &spi0 {
+  cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
