@@ -4,7 +4,7 @@ name: Wysteria
 type: shield
 url: https://github.com/j-w-e/jwekb
 requires: [pro_micro]
-exposes: [i2c_oled]
+# exposes: [i2c_oled]
 features:
   - keys
   - encoder
