@@ -1,9 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-nice_view_spi: &spi0 {
-  cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
-};
+# nice_view_spi: &spi0 {
+#   cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+# };
 
 / {
     keymap {
@@ -13,8 +13,8 @@ nice_view_spi: &spi0 {
             bindings = <
                                   &kp W     &kp E     &kp R     &kp T
                 &kp Q    &kp A    &kp S     &kp D     &kp F     &kp G
-                &kp SPACE &kp Z    &kp X    &kp C     &kp V     &kp B    &kp C_MUTE
-                                                      &kp U    &kp I     &kp O
+                &kp LCTRL &kp Z    &kp X    &kp C     &kp V     &kp B    &kp C_MUTE
+                                                      &kp LSHFT &kp SPACE &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
