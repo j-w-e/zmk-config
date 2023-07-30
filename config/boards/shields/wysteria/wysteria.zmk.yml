@@ -8,6 +8,7 @@ exposes: [i2c_oled]
 features:
   - keys
   - encoder
+  - display
 # siblings:
 #   - corne_left
 #   - corne_right
