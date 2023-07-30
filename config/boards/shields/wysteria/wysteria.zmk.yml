@@ -8,7 +8,7 @@ requires: [pro_micro]
 features:
   - keys
   - encoder
-  - display
+  # - display
 # siblings:
 #   - corne_left
 #   - corne_right
