@@ -7,11 +7,11 @@ url: https://github.com/j-w-e/jwekb
 requires: 
   - [pro_micro]
   - [i2c_oled]
-exposes: [nice_view_header]
+# exposes: [nice_view_header]
 features:
   - keys
   - encoder
-  - display
+  # - display
 # siblings:
 #   - corne_left
 #   - corne_right
