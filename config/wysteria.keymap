@@ -17,6 +17,13 @@
         quick-release;
         ignore-modifiers;
       };
+      bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -25,7 +32,7 @@
         default_layer {
             bindings = <
                                       &kp W     &kp F     &kp P     &kp B                           &kp J     &kp L     &kp U     &kp Y
-                &kp MINUS &kp R       &kp S     &kp T     &kp H     &kp RET                         &kp BSPC  &kp N     &kp A     &kp I     &kp O    &kp SQT
+                &kp MINUS &kp R       &kp S     &kp T     &kp H     &kp RET                         &bspc_del &kp N     &kp A     &kp I     &kp O    &kp SQT
                 &none     &key_repeat &kp C     &kp G     &kp D     &kp K     &kp C_MUTE &kp C_MUTE &kp V     &kp M     &kp COMMA &kp DOT   &kp FSLH &none
                                                           &mo NUM   &kp SPACE &mo NAV    &sl SYM    &kp E     &mo WMM
             >;
@@ -35,10 +42,10 @@
 
         nav_layer {
             bindings = <
-                                      &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(Y)                       &none     &none     &none     &none
-                &kp LG(Z) &skq LCTRL   &skq LALT  &skq LGUI  &skq LSHFT &kp RET                         &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
-                &none     &key_repeat &kp C     &kp G     &kp D     &kp K     &kp C_MUTE &kp C_MUTE &none     &none     &none     &none     &none     &none
-                                                          &mo NUM   &kp SPACE &mo NAV    &sl SYM    &kp E     &mo WMM
+                                      &kp LG(X) &kp LG(C) &kp LG(V)  &kp LG(Y)                       &none     &none     &none     &none
+                &kp LG(Z) &skq LCTRL  &skq LALT &skq LGUI &skq LSHFT &kp RET                         &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
+                &none     &key_repeat &none     &kp ESC   &kp TAB    &kp K     &kp C_MUTE &kp C_MUTE &none     &none     &none     &none     &none     &none
+                                                          &mo NUM    &kp SPACE &mo NAV    &sl SYM    &kp E     &mo WMM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -46,16 +53,16 @@
 
         num_layer {
             bindings = <
-                                &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N1  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9
+                &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N4  &kp N5  &kp N6  &kp N0  &kp EQUAL
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N1  &kp N2  &kp N3  &kp PLUS  &trans
                                                 &mo NUM &kp SPACE &mo NAV   &sl SYM &trans  &mo WMM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        wmm_layer {
+        sym_layer {
             bindings = <
                                 &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
