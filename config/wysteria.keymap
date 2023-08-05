@@ -1,0 +1,25 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+//#define NAV 2
+//#define NUM 3
+//#define SYM 4
+//#define WMM 5
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                                      &kp W     &kp F     &kp P     &kp B                           &kp J     &kp L     &kp U     &kp Y
+                &kp MINUS &kp R       &kp S     &kp T     &kp H     &kp RET                         &kp BSPC  &kp N     &kp A     &kp I     &kp O    &kp SQT
+                &none     &key_repeat &kp C     &kp G     &kp D     &kp K     &kp C_MUTE &kp C_MUTE &kp V     &kp M     &kp COMMA &kp DOT   &kp FSLH &none
+                                                          //&mo NUM   &kp SPACE &mo NAV    &mo SYM    &kp E     &mo WMM
+                                                          &none   &kp SPACE &none    &none    &kp E     &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+    };
+};
