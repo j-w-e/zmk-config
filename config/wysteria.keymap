@@ -7,6 +7,18 @@
 #define WMM 4
 
 / {
+    behaviors {
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        ignore-modifiers;
+      };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -15,7 +27,7 @@
                                       &kp W     &kp F     &kp P     &kp B                           &kp J     &kp L     &kp U     &kp Y
                 &kp MINUS &kp R       &kp S     &kp T     &kp H     &kp RET                         &kp BSPC  &kp N     &kp A     &kp I     &kp O    &kp SQT
                 &none     &key_repeat &kp C     &kp G     &kp D     &kp K     &kp C_MUTE &kp C_MUTE &kp V     &kp M     &kp COMMA &kp DOT   &kp FSLH &none
-                                                          &mo NUM   &kp SPACE &mo NAV    &mo SYM    &kp E     &mo WMM
+                                                          &mo NUM   &kp SPACE &mo NAV    &sl SYM    &kp E     &mo WMM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -24,9 +36,9 @@
         nav_layer {
             bindings = <
                                       &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(Y)                       &none     &none     &none     &none
-                &kp LG(Z) &sk LCTRL   &sk LALT  &sk LGUI  &sk LSHFT &kp RET                         &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
+                &kp LG(Z) &skq LCTRL   &skq LALT  &skq LGUI  &skq LSHFT &kp RET                         &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
                 &none     &key_repeat &kp C     &kp G     &kp D     &kp K     &kp C_MUTE &kp C_MUTE &none     &none     &none     &none     &none     &none
-                                                          &mo NUM   &kp SPACE &mo NAV    &mo SYM    &kp E     &mo WMM
+                                                          &mo NUM   &kp SPACE &mo NAV    &sl SYM    &kp E     &mo WMM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -37,7 +49,7 @@
                                 &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N1  &trans  &trans  &trans  &trans
-                                                &mo NUM &kp SPACE &mo NAV   &mo SYM &trans  &mo WMM
+                                                &mo NUM &kp SPACE &mo NAV   &sl SYM &trans  &mo WMM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -48,7 +60,7 @@
                                 &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N2  &trans  &trans  &trans
-                                                &mo NUM &kp SPACE &mo NAV   &mo SYM &trans  &mo WMM
+                                                &mo NUM &kp SPACE &mo NAV   &sl SYM &trans  &mo WMM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
