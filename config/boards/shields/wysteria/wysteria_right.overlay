@@ -4,12 +4,12 @@
     col-offset = <5>;
 };
 
-//&kscan_0 {
-    //col-gpios
-        //= <&pro_micro 21 GPIO_ACTIVE_HIGH>
-        //, <&pro_micro 20 GPIO_ACTIVE_HIGH>
-        //, <&pro_micro 19 GPIO_ACTIVE_HIGH>
-        //, <&pro_micro 18 GPIO_ACTIVE_HIGH>
-        //, <&pro_micro 6 GPIO_ACTIVE_HIGH>
-        //;
-//};
+&kscan0 {
+    col-gpios
+        = <&pro_micro 21 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 20 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        ;
+};
