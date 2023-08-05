@@ -1,10 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
-#define NAV 1
-#define NUM 2
-#define SYM 3
-#define WMM 4
+#include "wrappers.h"
 
 / {
     behaviors {
