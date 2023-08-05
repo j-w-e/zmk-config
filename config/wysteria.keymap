@@ -27,10 +27,10 @@
 
         default_layer {
             bindings = <
-                                      &kp W     &kp F     &kp P     &kp B                           &kp J     &kp L     &kp U     &kp Y
-                &kp MINUS &kp R       &kp S     &kp T     &kp H     &kp RET                         &bspc_del &kp N     &kp A     &kp I     &kp O    &kp SQT
-                &none     &key_repeat &kp C     &kp G     &kp D     &kp K     &kp C_MUTE &kp C_MUTE &kp V     &kp M     &kp COMMA &kp DOT   &kp FSLH &none
-                                                                                    __THUMBS__
+                          __APTMAK_L1__           __APTMAK_R1__
+                          __APTMAK_L2__           __APTMAK_R2__
+                    &none __APTMAK_L3__ MUTE MUTE __APTMAK_R3__ &none
+                           __THUMBS__
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
