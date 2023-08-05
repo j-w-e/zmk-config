@@ -12,6 +12,6 @@ features:
   - keys
   - encoder
   # - display
-# siblings:
-#   - corne_left
-#   - corne_right
+siblings:
+  - wysteria_left
+  - wysteria_right
