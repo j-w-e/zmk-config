@@ -64,10 +64,10 @@
 
         num_layer {
             bindings = <
-                                &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9
-                &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N4  &kp N5  &kp N6  &kp N0  &kp EQUAL
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N1  &kp N2  &kp N3  &kp PLUS  &trans
-                                                &mo NUM &kp SPACE &mo NAV   &sl SYM &trans  &mo WMM
+                          __NUM____L1__           __NUM____R1__
+                    &none __NUM____L2__           __NUM____R2__ &none
+                          __NUM____L3__           __NUM____R3__
+                                       __THUMBS__
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -75,10 +75,10 @@
 
         sym_layer {
             bindings = <
-                                &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N2  &trans  &trans  &trans
-                                                &mo NUM &kp SPACE &mo NAV   &sl SYM &trans  &mo WMM
+                          __SYM____L1__           __SYM____R1__
+                    &none __SYM____L2__           __SYM____R2__ &none
+                          __SYM____L3__           __SYM____R3__
+                                       __THUMBS__
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
