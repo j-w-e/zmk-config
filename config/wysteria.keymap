@@ -43,14 +43,25 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+      &sk {
+            quick-release;
+            /* /delete-property/ ignore-modifiers; */
+      };
+      }
     };
+    
     combos {
           compatible = "zmk,combos";
             
             COMBO(x, &kp X, 30 31)
             COMBO(z, &kp Z, 24 25)
             COMBO(q, &kp Q, 2 3)
+            COMBO(caps_word, &caps_word, 13 18)
+            COMBO(lshift, &sk LSHFT, 13 14)
+            COMBO(rshift, &sk RSHFT, 17 18)
     };
+
+
 
     keymap {
         compatible = "zmk,keymap";
