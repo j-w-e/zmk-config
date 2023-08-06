@@ -31,7 +31,7 @@
 
 #define __NUM____L1__ &kp E      &none     &none     &none     &none   // Need to think about what goes here
 #define __NUM____L2__ __CALLUM_L__                             &kp RET
-#define __NUM____L3__ &kp LS(LG(TAB)) &kp LG(TAB) &kp ESC &kp TAB &none // Need to think about what goes on inner index key
+#define __NUM____L3__ &kp LS(LC(TAB)) &kp LC(TAB) &kp ESC &kp TAB &none // Need to think about what goes on inner index key
 
 #define __NUM____R1__ &kp MINUS  &kp N7    &kp N8    &kp N9    &kp EQUAL
 #define __NUM____R2__ &bspc_del  &kp N4    &kp N5    &kp N6    &kp N0
@@ -39,7 +39,7 @@
 
 
 #define __SYM____L1__ &kp LT     &kp LBRC  &kp LPAR  &kp LBKT  &none   // Need to think about what goes on inner index key
-#define __SYM____L2__ &kp POUND  &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
+#define __SYM____L2__ &kp NUHS   &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
 #define __SYM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
 
 #define __SYM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
