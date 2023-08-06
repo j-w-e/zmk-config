@@ -2,6 +2,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include "wrappers.h"
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+      combo_##NAME { \
+          timeout-ms = <50>; \
+          bindings = <BINDINGS>; \
+          key-positions = <KEYPOS>; \
+          layers = <0>; \
+        };
+
 / {
     behaviors {
       skq: sticky_key_quick_release {
@@ -35,6 +43,11 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+    };
+    combos {
+          compatible = "zmk,combos";
+            
+            COMBO(one, &kp X, 30, 31)
     };
 
     keymap {
