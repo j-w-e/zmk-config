@@ -8,7 +8,7 @@
 #define SYM 3
 #define WMM 4
 
-#define HSH S(N3)
+#define HSH LS(N3)
 
 #define MUTE &kp C_MUTE
 #define REPEAT &key_repeat

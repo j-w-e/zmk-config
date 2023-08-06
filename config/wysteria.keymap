@@ -83,5 +83,16 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
+
+        /* wmm_layer { */
+        /*     bindings = < */
+        /*                   __WMM____L1__           __WMM____R1__ */
+        /*             &none __WMM____L2__           __WMM____R2__ &none */
+        /*                   __WMM____L3__ MUTE MUTE __WMM____R3__ */
+        /*                                __THUMBS__ */
+        /*     >; */
+        /**/
+        /*     sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>; */
+        /* }; */
     };
 };
