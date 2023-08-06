@@ -1,14 +1,17 @@
 /* UK characters
  * POUND is     £
  * NUBS is      § and ±
- * NUHS is      
+ * NUHS is      \ and |
+ * HASH is      £ and £
+ * PIPE is      | and |
+ * PIPE2 is     ± and ±
  * */
 #define NAV 1
 #define NUM 2
 #define SYM 3
 #define WMM 4
 
-#define HSH LS(N3)
+#define HSH RA(N3)
 
 #define MUTE &kp C_MUTE
 #define REPEAT &key_repeat
@@ -36,8 +39,7 @@
 #define __NAV____R3__ &none     &none     &none     &none     &none    // Add back the LG(arrows)?
 
 
-#define __NUM____L1__ &kp NUBS   &kp NUHS  &kp HASH  &kp PIPE  &kp PIPE2  // Need to think about what goes here
-/* #define __NUM____L1__ &kp E      &none     &none     &none     &none   // Need to think about what goes here */
+#define __NUM____L1__ &kp E      &none     &none     &none     &none   // Need to think about what goes here
 #define __NUM____L2__ __CALLUM_L__                             &kp RET
 #define __NUM____L3__ &kp LS(LC(TAB)) &kp LC(TAB) &kp ESC &kp TAB &none // Need to think about what goes on inner index key
 
@@ -53,3 +55,12 @@
 #define __SYM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
 #define __SYM____R2__ &none      __CALLUM_R__                          // Need to add macro for word delete
 #define __SYM____R3__ &kp TILDE  &kp CARET &kp BSLH  &none     &none   // Need to add macros for NRC and M&E
+
+
+#define __WMM____L1__ &kp LT     &kp LBRC  &kp LPAR  &kp LBKT  &none   // Need to think about what goes on inner index key
+#define __WMM____L2__ &kp HSH    &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
+#define __WMM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
+
+#define __WMM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
+#define __WMM____R2__ &none      __CALLUM_R__                          // Need to add macro for word delete
+#define __WMM____R3__ &kp TILDE  &kp CARET &kp BSLH  &none     &none   // Need to add macros for NRC and M&E
