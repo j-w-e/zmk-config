@@ -48,7 +48,7 @@
           compatible = "zmk,combos";
             
             COMBO(one, &kp X, 30 31)
-,   };
+    };
 
     keymap {
         compatible = "zmk,keymap";
