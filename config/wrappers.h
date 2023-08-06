@@ -7,8 +7,8 @@
 #define REPEAT &key_repeat
 
 #define __THUMBS__ &mo NUM &kp SPACE &mo NAV &sl SYM &kp E &mo WMM
-#define __CALLUM_R__ &skq LCTRL  &skq LALT &skq LGUI &skq LSHFT
-#define __CALLUM_L__ &skq LSHFT  &skq LGUI &skq LALT &skq LCTRL
+#define __CALLUM_L__ &skq LCTRL  &skq LALT &skq LGUI &skq LSHFT
+#define __CALLUM_R__ &skq LSHFT  &skq LGUI &skq LALT &skq LCTRL
 
 
 #define __APTMAK_L1__ &kp MINUS &kp W     &kp F     &kp P     &kp B
