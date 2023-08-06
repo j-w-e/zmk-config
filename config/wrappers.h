@@ -27,7 +27,7 @@
 #define Y_WIN_L &kp LC(LA(LG(J)))
 #define Y_WIN_D &kp LC(LA(LG(K)))
 #define Y_WIN_U &kp LC(LA(LG(L)))
-#define Y_WIN_R &kp LC(LA(LG(SCLN)))
+#define Y_WIN_R &kp LC(LA(LG(SEMI)))
 
 #define MUTE &kp C_MUTE
 #define REPEAT &key_repeat
