@@ -53,9 +53,9 @@
 
         nav_layer {
             bindings = <
-                                      &kp LG(X) &kp LG(C) &kp LG(V)  &kp LG(Y)                       &none     &none     &none     &none
-                &kp LG(Z) &skq LCTRL  &skq LALT &skq LGUI &skq LSHFT &kp RET                         &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
-                &none     &none       &none     &kp ESC   &kp TAB    &kp K     &kp C_MUTE &kp C_MUTE &none     &none     &none     &none     &none     &none
+                          __NAV____L1__           __NAV____R1__
+                    &none __NAV____L2__           __NAV____R2__ &none
+                          __NAV____L3__           __NAV____R3__
                                        __THUMBS__
             >;
 
