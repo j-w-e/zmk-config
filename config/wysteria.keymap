@@ -26,6 +26,7 @@
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
       comma: comma_scolon {
             compatible = "zmk,behavior-mod-morph";
