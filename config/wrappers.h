@@ -15,3 +15,11 @@
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
 #define __APTMAK_R2__ &bspc_del &kp N     &kp A     &kp I     &kp O
 #define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp FSLH
+
+#define __NAV____R1__ 
+#define __NAV____R2__ 
+#define __NAV____R3__ 
+
+#define __NAV____L1__ 
+#define __NAV____L2__ 
+#define __NAV____L3__ 

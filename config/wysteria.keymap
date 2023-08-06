@@ -43,8 +43,8 @@
         default_layer {
             bindings = <
                           __APTMAK_L1__           __APTMAK_R1__
-                          __APTMAK_L2__           __APTMAK_R2__
-                    &none __APTMAK_L3__ MUTE MUTE __APTMAK_R3__ &none
+                    &none __APTMAK_L2__           __APTMAK_R2__ &none
+                          __APTMAK_L3__ MUTE MUTE __APTMAK_R3__
                                        __THUMBS__
             >;
 
