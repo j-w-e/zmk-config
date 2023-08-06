@@ -73,15 +73,15 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        /* sym_layer { */
-        /*     bindings = < */
-        /*                   __SYM____L1__           __SYM____R1__ */
-        /*             &none __SYM____L2__           __SYM____R2__ &none */
-        /*                   __SYM____L3__           __SYM____R3__ */
-        /*                                __THUMBS__ */
-        /*     >; */
-        /**/
-        /*     sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>; */
-        /* }; */
+        sym_layer {
+            bindings = <
+                          __SYM____L1__           __SYM____R1__
+                    &none __SYM____L2__           __SYM____R2__ &none
+                          __SYM____L3__           __SYM____R3__
+                                       __THUMBS__
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
     };
 };
