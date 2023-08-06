@@ -86,17 +86,11 @@
 
         wmm_layer {
             bindings = <
-                          &none      &none     &none     &none     &none              &kp Y_ZOOM,   &kp Y_WARP_L,  &kp Y_WARP_D,    &kp Y_WARP_U,   &kp Y_WARP_R
+                          __WMM____L1__           __WMM____R1__
                     &none __WMM____L2__           __WMM____R2__ &none
                           __WMM____L3__ MUTE MUTE __WMM____R3__
                                        __THUMBS__
             >;
-            /* bindings = < */
-            /*               __WMM____L1__           __WMM____R1__ */
-            /*         &none __WMM____L2__           __WMM____R2__ &none */
-            /*               __WMM____L3__ MUTE MUTE __WMM____R3__ */
-            /*                            __THUMBS__ */
-            /* >; */
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
