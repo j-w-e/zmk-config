@@ -13,6 +13,22 @@
 
 #define HSH RA(N3)
 
+#define Y_ZOOM &kp LC(LA(LG(Y)))
+#define Y_WARP_L &kp LC(LA(LG(U)))
+#define Y_WARP_D &kp LC(LA(LG(I)))
+#define Y_WARP_U &kp LC(LA(LG(O)))
+#define Y_WARP_R &kp LC(LA(LG(P)))
+#define Y_TOGGL &kp LC(LA(LG(M)))
+#define Y_SPC_L &kp LC(LEFT)
+#define Y_APPWIN &kp LC(DOWN)
+#define Y_M_CTL &kp LC(UP)
+#define Y_SPC_R &kp LC(RIGHT)
+#define Y_CENTRE &kp LC(LA(LG(H)))
+#define Y_WIN_L &kp LC(LA(LG(J)))
+#define Y_WIN_D &kp LC(LA(LG(K)))
+#define Y_WIN_U &kp LC(LA(LG(L)))
+#define Y_WIN_R &kp LC(LA(LG(SCLN)))
+
 #define MUTE &kp C_MUTE
 #define REPEAT &key_repeat
 
@@ -57,10 +73,11 @@
 #define __SYM____R3__ &kp TILDE  &kp CARET &kp BSLH  &none     &none   // Need to add macros for NRC and M&E
 
 
-#define __WMM____L1__ &kp LT     &kp LBRC  &kp LPAR  &kp LBKT  &none   // Need to think about what goes on inner index key
-#define __WMM____L2__ &kp HSH    &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
-#define __WMM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
+#define __WMM____L1__ &none      &none     &none     &none     &none   
+#define __WMM____L2__ &none      __CALLUM_R__
+#define __WMM____L3__ &none      &none     &none     &none     &none
 
-#define __WMM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
-#define __WMM____R2__ &none      __CALLUM_R__                          // Need to add macro for word delete
-#define __WMM____R3__ &kp TILDE  &kp CARET &kp BSLH  &none     &none   // Need to add macros for NRC and M&E
+#define __WMM____R1__ Y_ZOOM,   Y_WARP_L,  Y_WARP_D,    Y_WARP_U,   Y_WARP_R
+#define __WMM____R2__ Y_TOGGL,  Y_SPC_L,   Y_APPWIN,    Y_M_CTL,    Y_SPC_R
+#define __WMM____R3__ Y_CENTRE, Y_WIN_L,   Y_WIN_D,     Y_WIN_U,    Y_WIN_R
+
