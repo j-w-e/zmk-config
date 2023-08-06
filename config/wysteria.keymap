@@ -10,6 +10,11 @@
           layers = <0>; \
         };
 
+&sk {
+    quick-release;
+    /* /delete-property/ ignore-modifiers; */
+};
+
 / {
     behaviors {
       skq: sticky_key_quick_release {
@@ -43,10 +48,6 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-      &sk {
-            quick-release;
-            /* /delete-property/ ignore-modifiers; */
-      };
     };
     
     combos {
