@@ -55,7 +55,7 @@
             bindings = <
                           __NAV____L1__           __NAV____R1__
                     &none __NAV____L2__           __NAV____R2__ &none
-                          __NAV____L3__           __NAV____R3__
+                          __NAV____L3__ MUTE MUTE __NAV____R3__
                                        __THUMBS__
             >;
 
@@ -66,7 +66,7 @@
             bindings = <
                           __NUM____L1__           __NUM____R1__
                     &none __NUM____L2__           __NUM____R2__ &none
-                          __NUM____L3__           __NUM____R3__
+                          __NUM____L3__ MUTE MUTE __NUM____R3__
                                        __THUMBS__
             >;
 
@@ -77,7 +77,7 @@
             bindings = <
                           __SYM____L1__           __SYM____R1__
                     &none __SYM____L2__           __SYM____R2__ &none
-                          __SYM____L3__           __SYM____R3__
+                          __SYM____L3__ MUTE MUTE __SYM____R3__
                                        __THUMBS__
             >;
 
