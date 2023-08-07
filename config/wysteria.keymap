@@ -71,9 +71,17 @@
     };
 
     macros {
+        ZMK_MACRO(nrc,
+                wait-ms = <20>;
+                tap-ms = <20>;
+                bindings 
+                    = <&macro_press    &kp LSHFT>
+                    , <&macro_tap      &kp N &kp R &kp C>
+                    , <&macro_release  &kp LSHFT>;
+                )
         ZMK_MACRO(mne,
-                wait-ms = <30>;
-                tap-ms = <30>;
+                wait-ms = <20>;
+                tap-ms = <20>;
                 bindings 
                     = <&macro_press    &kp LSHFT>
                     , <&macro_tap      &kp M &kp AMPS &kp E>
