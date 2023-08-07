@@ -79,7 +79,7 @@
                     , <&macro_tap      &kp M &kp AMPS &kp E>
                     , <&macro_release  &kp LSHFT>;
                 )
-    }
+    };
 
 
 
