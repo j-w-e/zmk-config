@@ -4,15 +4,24 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
       combo_##NAME { \
-          timeout-ms = <50>; \
+          timeout-ms = <20>; \
           bindings = <BINDINGS>; \
           key-positions = <KEYPOS>; \
           layers = <0>; \
         };
 
-&sk {
+/* #define MACRO(NAME, BINDINGS) \ */
+/*     macro_##NAME: macro_##NAME { \ */
+/*                          compatible = "zmk,behavior-macro"; \ */
+/*                          label = "ZM_my_macro"; \ */
+/*                          #binding-cells = <0>; \ */
+/*                          wait-ms = <30>; \ */
+/*                          tap-ms = <40>; \ */
+/*                          bindings = <BINDINGS>; \ */
+/*                      }; */
+
+&sk { 
     quick-release;
-    /* /delete-property/ ignore-modifiers; */
 };
 
 / {
@@ -60,6 +69,17 @@
             COMBO(lshift, &sk LSHFT, 13 14)
             COMBO(rshift, &sk RSHFT, 17 18)
     };
+
+    macros {
+        ZMK_MACRO(mne,
+                wait-ms = <30>;
+                tap-ms = <30>;
+                bindings 
+                    = <&macro_press    &kp LSHFT>
+                    , <&macro_tap      &kp M &kp AMPS &kp E>
+                    , <&macro_release  &kp LSHFT>;
+                )
+    }
 
 
 
