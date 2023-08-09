@@ -69,7 +69,7 @@
 #define __SYM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
 
 #define __SYM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
-#define __SYM____R2__ &wd_bspc_del      __CALLUM_R__                          // Need to add macro for word delete
+#define __SYM____R2__ &kp LA(BSPC)      __CALLUM_R__                          // Need to add macro for word delete
 #define __SYM____R3__ &kp TILDE  &kp CARET &kp BSLH  &nrc      &mne    // Need to add macros for NRC and M&E
 
 
