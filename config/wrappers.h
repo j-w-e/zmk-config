@@ -69,12 +69,12 @@
 #define __SYM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
 
 #define __SYM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
-#define __SYM____R2__ &none      __CALLUM_R__                          // Need to add macro for word delete
+#define __SYM____R2__ &wd_bspc_del      __CALLUM_R__                          // Need to add macro for word delete
 #define __SYM____R3__ &kp TILDE  &kp CARET &kp BSLH  &nrc      &mne    // Need to add macros for NRC and M&E
 
 
 #define __WMM____L1__ &none      &none     &none     &none     &none
-#define __WMM____L2__ &none      __CALLUM_R__                          // Need to add mouse keys
+#define __WMM____L2__ __CALLUM_L__                             &kp RET
 #define __WMM____L3__ &none      &none     &none     &none     &none
 
 #define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
