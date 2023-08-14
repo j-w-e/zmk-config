@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include "wrappers.h"
 
+#include "secrets.keymap"
+
 #define COMBO(NAME, BINDINGS, KEYPOS) \
       combo_##NAME { \
           timeout-ms = <20>; \
@@ -81,7 +83,7 @@
         ZMK_MACRO(nrc,
                 wait-ms = <20>;
                 tap-ms = <20>;
-                bindings 
+                bindings
                     = <&macro_press    &kp LSHFT>
                     , <&macro_tap      &kp N &kp R &kp C>
                     , <&macro_release  &kp LSHFT>;
@@ -89,13 +91,24 @@
         ZMK_MACRO(mne,
                 wait-ms = <20>;
                 tap-ms = <20>;
-                bindings 
+                bindings
                     = <&macro_press    &kp LSHFT>
                     , <&macro_tap      &kp M &kp AMPS &kp E>
                     , <&macro_release  &kp LSHFT>;
                 )
+        ZMK_MACRO(pass,
+                wait-ms = <5>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_tap      SECRET_ONE>;
+                )
+        ZMK_MACRO(email,
+                wait-ms = <5>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_tap      SECRET_TWO>;
+                )
     };
-
 
 
     keymap {
