@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include "wrappers.h"
+#include <dt-bindings/zmk/mouse.h>
 
 #include "secrets.keymap"
 

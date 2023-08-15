@@ -73,9 +73,9 @@
 #define __SYM____R3__ &kp TILDE  &kp CARET &kp BSLH  &nrc      &mne    // Need to add macros for NRC and M&E
 
 
-#define __WMM____L1__ &none      &none     &none     &none     &none
+#define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_UP
 #define __WMM____L2__ __CALLUM_L__                             &kp RET
-#define __WMM____L3__ &none      &none     &none     &none     &none
+#define __WMM____L3__ &kp A      &none     &none     &mkp LCLK &mwh SCROLL_DOWN
 
 #define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
 #define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
