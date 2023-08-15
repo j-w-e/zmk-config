@@ -21,7 +21,7 @@
                                                       &kp LSHFT &kp SPACE &kp LGUI   &kp BSPC    &kp RET   &kp ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
