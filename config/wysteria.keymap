@@ -22,7 +22,7 @@
 /*                          bindings = <BINDINGS>; \ */
 /*                      }; */
 
-&sk { 
+&sk {
     quick-release;
 };
 
@@ -66,11 +66,19 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+      swap: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <14>; // 14 corresponds to QWERTY F, which is my left shift
+        };
+
     };
-    
+
     combos {
           compatible = "zmk,combos";
-            
+
             COMBO(x, &kp X, 30 31)
             COMBO(z, &kp Z, 24 25)
             COMBO(q, &kp Q, 2 3)
@@ -109,7 +117,6 @@
                     = <&macro_tap      SECRET_TWO>;
                 )
     };
-
 
     keymap {
         compatible = "zmk,keymap";
