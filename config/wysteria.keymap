@@ -66,11 +66,18 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-      swap: swapper {
+      swap: swap_win {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <14>; // 14 corresponds to QWERTY F, which is my left shift
+        };
+      swap_app: swap_app_win {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAP_APP";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
             ignored-key-positions = <14>; // 14 corresponds to QWERTY F, which is my left shift
         };
 
