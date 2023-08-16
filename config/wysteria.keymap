@@ -13,6 +13,17 @@
           layers = <0>; \
         };
 
+#define U_MOUSE_SCROLL_MAX 200      // 10
+
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
+
 /* #define MACRO(NAME, BINDINGS) \ */
 /*     macro_##NAME: macro_##NAME { \ */
 /*                          compatible = "zmk,behavior-macro"; \ */
@@ -27,11 +38,6 @@
     quick-release;
 };
 
-&mwh {
-  acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <5000>;    // 40
-  delay-ms = <0>;                   // 10
-};
 
 / {
     behaviors {
@@ -86,6 +92,18 @@
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
             ignored-key-positions = <14>; // 14 corresponds to QWERTY F, which is my left shift
+        };
+      rot_kp: behavior_sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENC_KP";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+      rot_mwh: behavior_sensor_rotate_mwh {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENC_MOUSE";
+            #sensor-binding-cells = <2>;
+            bindings = <&mwh>, <&mwh>;
         };
 
     };
@@ -143,7 +161,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_mwh SCROLL_UP SCROLL_DOWN>;
         };
 
         nav_layer {
@@ -154,7 +172,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&rot_mwh SCROLL_LEFT SCROLL_RIGHT &inc_dec_kp A B>;
         };
 
         num_layer {
@@ -165,7 +183,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&rot_mwh SCROLL_LEFT SCROLL_RIGHT &inc_dec_kp PG_DN PG_UP>;
         };
 
         sym_layer {
