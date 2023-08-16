@@ -27,6 +27,12 @@
     quick-release;
 };
 
+&mwh {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <5000>;    // 40
+  delay-ms = <0>;                   // 10
+};
+
 / {
     behaviors {
       skq: sticky_key_quick_release {
