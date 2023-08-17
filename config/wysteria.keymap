@@ -151,6 +151,14 @@
                 )
     };
 
+    leader_sequences {
+        compatible = "zmk,leader-sequences";
+        seq_esc {
+            key-positions = <0 1>;
+            bindings = <&kp A>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
