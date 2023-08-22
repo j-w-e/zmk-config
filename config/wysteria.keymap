@@ -156,7 +156,7 @@
         default_layer {
             bindings = <
                           __APTMAK_L1__           __APTMAK_R1__
-                    &none __APTMAK_L2__           __APTMAK_R2__ &none
+                          __APTMAK_L2__           __APTMAK_R2__
                           __APTMAK_L3__ MUTE MUTE __APTMAK_R3__
                                        __THUMBS__
             >;
@@ -167,7 +167,7 @@
         nav_layer {
             bindings = <
                           __NAV____L1__           __NAV____R1__
-                    &none __NAV____L2__           __NAV____R2__ &none
+                          __NAV____L2__           __NAV____R2__
                           __NAV____L3__ MUTE MUTE __NAV____R3__
                                        __THUMBS__
             >;
@@ -178,7 +178,7 @@
         num_layer {
             bindings = <
                           __NUM____L1__           __NUM____R1__
-                    &none __NUM____L2__           __NUM____R2__ &none
+                          __NUM____L2__           __NUM____R2__
                           __NUM____L3__ MUTE MUTE __NUM____R3__
                                        __THUMBS__
             >;
@@ -189,7 +189,7 @@
         sym_layer {
             bindings = <
                           __SYM____L1__           __SYM____R1__
-                    &none __SYM____L2__           __SYM____R2__ &none
+                          __SYM____L2__           __SYM____R2__
                           __SYM____L3__ MUTE MUTE __SYM____R3__
                                        __THUMBS__
             >;
@@ -200,7 +200,7 @@
         wmm_layer {
             bindings = <
                           __WMM____L1__           __WMM____R1__
-                    &none __WMM____L2__           __WMM____R2__ &none
+                          __WMM____L2__           __WMM____R2__
                           __WMM____L3__ MUTE MUTE __WMM____R3__
                                        __THUMBS__
             >;

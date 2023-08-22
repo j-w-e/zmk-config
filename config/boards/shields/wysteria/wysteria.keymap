@@ -1,24 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-//nice_view_spi: &spi0 {
-  //cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
-  //mosi-pin = <&pro_micro 16 GPIO_ACTIVE_HIGH>;
-  //sck-pin = <&pro_micro 15 GPIO_ACTIVE_HIGH>;
-//};
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-            // top outside key is considered part of the top row, as it is designed to be part of the main block of alpha keys.
-            // the sixth column is only intended to be one key, the lower of the two in physical layout, which is designed to be a leader key
-                          &kp Q    &kp W     &kp E     &kp R     &kp T                           &kp Y     &kp U     &kp I     &kp O     &kp P
-                &kp LCTRL &kp A    &kp S     &kp D     &kp F     &kp G                           &kp H     &kp J     &kp K     &kp L     &kp SEMI    &kp SQT
-                          &kp Z    &kp X     &kp C     &kp V     &kp B    &kp C_MUTE &kp C_MUTE  &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH
-                                                      &kp LSHFT &kp SPACE &kp LGUI   &kp BSPC    &kp RET   &kp ESC
+            // top outside key is considered part of the top row, pinky col, as it is designed to be part of the main block of alpha keys.
+                &kp Q    &kp W     &kp E     &kp R     &kp T                           &kp Y     &kp U     &kp I     &kp O     &kp P
+                &kp A    &kp S     &kp D     &kp F     &kp G                           &kp H     &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z    &kp X     &kp C     &kp V     &kp B    &kp C_MUTE &kp C_MUTE  &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH
+                                            &kp LSHFT &kp SPACE &kp LGUI   &kp BSPC    &kp RET   &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
