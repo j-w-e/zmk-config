@@ -11,6 +11,7 @@
           bindings = <BINDINGS>; \
           key-positions = <KEYPOS>; \
           layers = <0>; \
+          slow-release; \
         };
 
 #define U_MOUSE_SCROLL_MAX 200      // 10
