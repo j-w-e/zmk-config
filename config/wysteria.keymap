@@ -173,7 +173,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&rot_mwh SCROLL_LEFT SCROLL_RIGHT &inc_dec_kp A B>;
+            sensor-bindings = <&rot_mwh SCROLL_LEFT SCROLL_RIGHT &inc_dec_kp PG_DN PG_UP>;
         };
 
         num_layer {
@@ -195,7 +195,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         wmm_layer {
