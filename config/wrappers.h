@@ -37,13 +37,13 @@
 #define __CALLUM_R__ &skq LSHFT  &skq LGUI &skq LALT &skq LCTRL
 
 
-#define __APTMAK_L1__ &kp MINUS &kp W     &kp F     &kp P     &kp B
+#define __APTMAK_L1__ &kp FSLH  &kp W     &kp F     &kp P     &kp B
 #define __APTMAK_L2__ &kp R     &kp S     &kp T     &kp H     &kp RET
 #define __APTMAK_L3__ REPEAT    &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
 #define __APTMAK_R2__ &bspc_del &kp N     &kp A     &kp I     &kp O
-#define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp FSLH
+#define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp MINUS
 
 
 #define __NAV____L1__ &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V)  &kp LG(Y)
@@ -55,7 +55,7 @@
 #define __NAV____R3__ &none     &none     &none     &none     &none    // Add back the LG(arrows)?
 
 
-#define __NUM____L1__ &kp E      &none     &none     &none     &none   // Need to think about what goes here
+#define __NUM____L1__ &kp E      &none     &none     &none     &bootloader   // Need to think about what goes here
 #define __NUM____L2__ __CALLUM_L__                             &kp RET
 #define __NUM____L3__ &kp LS(LC(TAB)) &kp LC(TAB) &kp ESC &kp TAB &none // Need to think about what goes on inner index key
 

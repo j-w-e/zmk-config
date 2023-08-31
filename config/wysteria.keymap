@@ -111,12 +111,12 @@
     combos {
           compatible = "zmk,combos";
 
-            COMBO(x, &kp X, 30 31)
-            COMBO(z, &kp Z, 24 25)
+            COMBO(x, &kp X, 28 29)
+            COMBO(z, &kp Z, 22 23)
             COMBO(q, &kp Q, 2 3)
             COMBO(caps_word, &caps_word, 13 18)
-            COMBO(lshift, &sk LSHFT, 13 14)
-            COMBO(rshift, &sk RSHFT, 17 18)
+            COMBO(lshift, &sk LSHFT, 12 13)
+            COMBO(rshift, &sk RSHFT, 16 17)
     };
 
     macros {

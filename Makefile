@@ -4,10 +4,15 @@ include dirs.mk
 
 quick:
 	cd $(zmk_path)/app && \
-	west build -d build/left 
+	west build -d build/left
 	mv $(zmk_path)/app/build/left/zephyr/zmk.uf2 ./builds/left.uf2
 	cp ./builds/left.uf2 /Volumes/NICENANO
 
+right:
+	cd $(zmk_path)/app && \
+	west build -d build/right
+	mv $(zmk_path)/app/build/right/zephyr/zmk.uf2 ./builds/right.uf2
+	cp ./builds/right.uf2 /Volumes/NICENANO
 
 quick_both:
 	cd $(zmk_path)/app && \
