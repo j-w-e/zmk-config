@@ -5,9 +5,9 @@
 
 #include "secrets.keymap"
 
-#define COMBO(NAME, BINDINGS, KEYPOS) \
+#define COMBO(NAME, TERM, BINDINGS, KEYPOS) \
       combo_##NAME { \
-          timeout-ms = <20>; \
+          timeout-ms = <TERM>; \
           bindings = <BINDINGS>; \
           key-positions = <KEYPOS>; \
           layers = <0>; \
@@ -85,14 +85,14 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-            ignored-key-positions = <14>; // 14 corresponds to QWERTY F, which is my left shift
+            ignored-key-positions = <13>; // 13 corresponds to QWERTY F, which is my left shift
         };
       swap_app: swap_app_win {
             compatible = "zmk,behavior-tri-state";
             label = "SWAP_APP";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
-            ignored-key-positions = <14>; // 14 corresponds to QWERTY F, which is my left shift
+            ignored-key-positions = <13>; // 13 corresponds to QWERTY F, which is my left shift
         };
       rot_kp: behavior_sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
@@ -112,12 +112,12 @@
     combos {
           compatible = "zmk,combos";
 
-            COMBO(x, &kp X, 28 29)
-            COMBO(z, &kp Z, 22 23)
-            COMBO(q, &kp Q, 2 3)
-            COMBO(caps_word, &caps_word, 13 16)
-            COMBO(lshift, &sk LSHFT, 12 13)
-            COMBO(rshift, &sk RSHFT, 16 17)
+            COMBO(x, 40, &kp X, 28 29)
+            COMBO(z, 40, &kp Z, 22 23)
+            COMBO(q, 40, &kp Q, 2 3)
+            COMBO(caps_word, 75, &caps_word, 13 16)
+            COMBO(lshift, 40, &sk LSHFT, 12 13)
+            COMBO(rshift, 40, &sk RSHFT, 16 17)
     };
 
     macros {
@@ -153,9 +153,9 @@
 
     leader_sequences {
         compatible = "zmk,leader-sequences";
-        seq_esc {
-            key-positions = <0 1>;
-            bindings = <&kp A>;
+        seq_test {
+            key-positions = <11 36>;
+            bindings = <&pass>;
         };
     };
 

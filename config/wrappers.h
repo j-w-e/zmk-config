@@ -52,7 +52,7 @@
 
 #define __NAV____R1__ &none     &none     &none     &none     &none    // Add back the LA(arrows)?
 #define __NAV____R2__ &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-#define __NAV____R3__ &none     &none     &none     &none     &none    // Add back the LG(arrows)?
+#define __NAV____R3__ &bootloader &none     &none     &none     &none    // Add back the LG(arrows)?
 
 
 #define __NUM____L1__ &kp E      &none     &none     &none     &bootloader   // Need to think about what goes here
@@ -68,13 +68,13 @@
 #define __SYM____L2__ &kp HSH    &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
 #define __SYM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
 
-#define __SYM____R1__ &none      &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
+#define __SYM____R1__ &kp BSLH   &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
 #define __SYM____R2__ &kp LA(BSPC)      __CALLUM_R__                          // Need to add macro for word delete
-#define __SYM____R3__ &kp TILDE  &kp CARET &kp BSLH  &nrc      &mne    // Need to add macros for NRC and M&E
+#define __SYM____R3__ &kp TILDE  &kp CARET &leader   &nrc      &mne    // Need to add macros for NRC and M&E
 
 
 #define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_UP
-#define __WMM____L2__ __CALLUM_L__                             &kp RET
+#define __WMM____L2__ __CALLUM_L__                             &mkp LCLK
 #define __WMM____L3__ &kp A      &none     &none     &mkp LCLK &mwh SCROLL_DOWN
 
 #define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
