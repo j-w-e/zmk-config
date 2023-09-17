@@ -123,7 +123,25 @@
             COMBO(boot, 50, &bootloader, 2 3 6 7)
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        settings {
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
+    };
+
     macros {
+        ZMK_MACRO(lock,
+                wait-ms = <20>;
+                tap-ms = <20>;
+                bindings
+                    = <&macro_press    &kp LGUI &kp LCTRL>
+                    , <&macro_tap      &kp Q>
+                    , <&macro_release  &kp LGUI &kp LCTRL>
+                    , <&macro_wait_time 100>
+                    , <&macro_tap      &none &kp ESC>;
+                )
         ZMK_MACRO(nrc,
                 wait-ms = <20>;
                 tap-ms = <20>;
@@ -273,6 +291,17 @@
                           __WMM____L1__           __WMM____R1__
                           __WMM____L2__           __WMM____R2__
                           __WMM____L3__ MUTE MUTE __WMM____R3__
+                                       __THUMBS__
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+        };
+
+        set_layer {
+            bindings = <
+                          __SET____L1__           __SET____R1__
+                          __SET____L2__           __SET____R2__
+                          __SET____L3__ MUTE MUTE __SET____R3__
                                        __THUMBS__
             >;
 
