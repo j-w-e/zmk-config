@@ -40,6 +40,9 @@
 &sk {
     quick-release;
 };
+&sl {
+    release-after-ms = <500>;
+};
 
 
 / {
