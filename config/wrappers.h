@@ -12,6 +12,7 @@
 #define WMM 4
 
 #define HSH RA(N3)
+#define SILCROW RA(N6)
 
 #define Y_ZOOM &kp LC(LA(LG(Y)))
 #define Y_WARP_L &kp LC(LA(LG(U)))
@@ -52,10 +53,10 @@
 
 #define __NAV____R1__ &none     &none     &none     &none     &none    // Add back the LA(arrows)?
 #define __NAV____R2__ &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-#define __NAV____R3__ &bootloader &none     &none     &none     &none    // Add back the LG(arrows)?
+#define __NAV____R3__ &none     &none     &none     &none     &none    // Add back the LG(arrows)?
 
 
-#define __NUM____L1__ &kp E      &none     &none     &kp PIPE  &kp SPACE   // Need to think about what goes here
+#define __NUM____L1__ &kp E      &none     &kp PIPE  &kp SILCROW &kp SPACE   // Need to think about what goes here
 #define __NUM____L2__ __CALLUM_L__                             &kp RET
 #define __NUM____L3__ &kp LS(LC(TAB)) &kp LC(TAB) &kp ESC &kp TAB &comma
 
@@ -81,9 +82,9 @@
 #define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
 #define __WMM____R3__ Y_CENTRE Y_WIN_L   Y_WIN_D     Y_WIN_U    Y_WIN_R
 
-#define __SET____L1__ &none       &none        &none        &none        &bootloader
+#define __SET____L1__ &bt BT_CLR  &none        &none        &none        &bootloader
 #define __SET____L2__ &none       &none        &none        &none        &none
-#define __SET____L3__ &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG &none
+#define __SET____L3__ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_TOG &none
 
 #define __SET____R1__ &bootloader &none        &none        &none        &none
 #define __SET____R2__ &none       &none        &none        &none        &none
