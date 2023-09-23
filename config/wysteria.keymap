@@ -1,6 +1,5 @@
 /* TODO:
 * put <> on inner index, and /\ on pinkies? So I can access / from num layer
-* put F keys somewhere. either on settings layer, or a new conditional layer?
 */
 
 #include <behaviors.dtsi>

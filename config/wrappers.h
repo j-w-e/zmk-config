@@ -76,16 +76,16 @@
 
 #define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_UP
 #define __WMM____L2__ __CALLUM_L__                             &mkp LCLK
-#define __WMM____L3__ &none &none &none &none &none
+#define __WMM____L3__ &none       &none        &none        &none        &none
 
 #define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
 #define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
 #define __WMM____R3__ Y_CENTRE Y_WIN_L   Y_WIN_D     Y_WIN_U    Y_WIN_R
 
 #define __SET____L1__ &bt BT_CLR  &none        &none        &none        &bootloader
-#define __SET____L2__ &none       &none        &none        &none        &none
+#define __SET____L2__ __CALLUM_L__                                       &lock
 #define __SET____L3__ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_TOG &none
 
-#define __SET____R1__ &bootloader &none        &none        &none        &none
-#define __SET____R2__ &none       &none        &none        &none        &none
-#define __SET____R3__ &none       &none        &none        &none        &lock
+#define __SET____R1__ &bootloader &kp F7   &kp F8    &kp F9    &kp F12
+#define __SET____R2__ &lock       &kp F4   &kp F5    &kp F6    &kp F11
+#define __SET____R3__ &none       &kp F1   &kp F2    &kp F3    &kp F10
