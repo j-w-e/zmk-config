@@ -43,6 +43,7 @@
 
 &sk {
     quick-release;
+    release-after-ms = <250>;
 };
 &sl {
     release-after-ms = <250>;
@@ -128,7 +129,9 @@
             COMBO(lshift, 25, &sk LSHFT, 12 13)
             COMBO(rshift, 25, &sk RSHFT, 16 17)
             COMBO(emdash, 25, &kp RA(MINUS), 30 31)
-            COMBO(boot, 50, &bootloader, 2 3 6 7)
+            COMBO(boot, 100, &bootloader, 2 3 6 7)
+            COMBO(bksp, 25, &bspc_del, 3 4)
+            COMBO(ent, 25, &kp RET, 5 6)
     };
 
     conditional_layers {

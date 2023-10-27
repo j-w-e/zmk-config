@@ -38,9 +38,9 @@
 #define __CALLUM_R__ &skq LSHFT  &skq LGUI &skq LALT &skq LCTRL
 
 
-#define __APTMAK_L1__ &kp FSLH  &kp W     &kp F     &kp P     &kp B
+#define __APTMAK_L1__ REPEAT    &kp W     &kp F     &kp P     &kp B
 #define __APTMAK_L2__ &kp R     &kp S     &kp T     &kp H     &kp RET
-#define __APTMAK_L3__ REPEAT    &kp C     &kp G     &kp D     &kp K
+#define __APTMAK_L3__ &kp FSLH  &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
 #define __APTMAK_R2__ &bspc_del &kp N     &kp A     &kp I     &kp O
