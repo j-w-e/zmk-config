@@ -43,7 +43,7 @@
 
 &sk {
     quick-release;
-    release-after-ms = <250>;
+    release-after-ms = <350>;
 };
 &sl {
     release-after-ms = <250>;
@@ -166,7 +166,7 @@
                 tap-ms = <20>;
                 bindings
                     = <&macro_press    &kp LSHFT>
-                    , <&macro_tap      &kp M &kp AMPS &kp E>
+                    , <&macro_tap      &kp M &kp E &kp L>
                     , <&macro_release  &kp LSHFT>;
                 )
         ZMK_MACRO(pass,
