@@ -119,19 +119,25 @@
 
     };
 
+/*  0  1  2  3  4         5  6  7  8  9 */
+/* 10 11 12 13 14        15 16 17 18 19 */
+/* 20 21 22 23 24 25  26 27 28 29 30 31 */
+/*          32 33 34  35 36 37          */
+
     combos {
           compatible = "zmk,combos";
 
             COMBO(x, 50, &kp X, 28 29)
             COMBO(z, 50, &kp Z, 22 23)
             COMBO(q, 50, &kp Q, 2 3)
-            COMBO(caps_word, 100, &caps_word, 13 16)
+            COMBO(caps_word_l, 50, &caps_word, 13 14)
+            COMBO(caps_word_r, 50, &caps_word, 15 16)
             COMBO(lshift, 25, &sk LSHFT, 12 13)
             COMBO(rshift, 25, &sk RSHFT, 16 17)
             COMBO(emdash, 25, &kp RA(MINUS), 30 31)
-            COMBO(boot, 100, &bootloader, 2 3 6 7)
             COMBO(bksp, 25, &bspc_del, 3 4)
             COMBO(ent, 25, &kp RET, 5 6)
+            COMBO(htor, 50, &htor, 10 13)
     };
 
     conditional_layers {
@@ -167,6 +173,26 @@
                 bindings
                     = <&macro_press    &kp LSHFT>
                     , <&macro_tap      &kp M &kp E &kp L>
+                    , <&macro_release  &kp LSHFT>;
+                )
+        ZMK_MACRO(screenshot,
+                wait-ms = <5>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_press    &kp LSHFT &kp LGUI>
+                    , <&macro_tap      &kp N5>
+                    , <&macro_release  &kp LSHFT &kp LGUI>;
+                )
+        ZMK_MACRO(htor,
+                wait-ms = <5>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_press    &kp LSHFT>
+                    , <&macro_tap      &kp H>
+                    , <&macro_release  &kp LSHFT>
+                    , <&macro_tap      &kp N2>
+                    , <&macro_press    &kp LSHFT>
+                    , <&macro_tap      &kp R>
                     , <&macro_release  &kp LSHFT>;
                 )
         ZMK_MACRO(pass,
@@ -247,6 +273,10 @@
         seq_so_email {
                 key-positions = <24 21>;
                 bindings = <&so_email>;
+        };
+        seq_screenshot {
+                key-positions = <12 11>;
+                bindings = <&screenshot>;
         };
     };
 

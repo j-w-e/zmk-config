@@ -65,11 +65,11 @@
 #define __NUM____R3__ &dot       &kp N1    &kp N2    &kp N3    &kp PLUS
 
 
-#define __SYM____L1__ &kp LT     &kp LBRC  &kp LPAR  &kp LBKT  &none   // Need to think about what goes on inner index key
+#define __SYM____L1__ &kp FSLH   &kp LBRC  &kp LPAR  &kp LBKT  &kp LT   // Need to think about what goes on inner index key
 #define __SYM____L2__ &kp HSH    &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
 #define __SYM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
 
-#define __SYM____R1__ &kp BSLH   &kp RBKT  &kp RPAR  &kp RBRC  &kp GT  // Need to think about what goes on inner index key
+#define __SYM____R1__ &kp GT     &kp RBKT  &kp RPAR  &kp RBRC  &kp BSLH  // Need to think about what goes on inner index key
 #define __SYM____R2__ &kp LA(BSPC)      __CALLUM_R__                          // Need to add macro for word delete
 #define __SYM____R3__ &kp TILDE  &kp CARET &leader   &nrc      &mne
 
