@@ -24,13 +24,16 @@
 #define Y_APPWIN &kp LC(DOWN)
 #define Y_M_CTL &kp LC(UP)
 #define Y_SPC_R &kp LC(RIGHT)
-#define Y_CENTRE &kp LC(LA(LG(H)))
+#define Y_CENTRE &kp LC(LA(LG(Z)))
 #define Y_WIN_L &kp LC(LA(LG(J)))
 #define Y_WIN_D &kp LC(LA(LG(K)))
 #define Y_WIN_U &kp LC(LA(LG(L)))
 #define Y_WIN_R &kp LC(LA(LG(SEMI)))
 
 #define MUTE &kp C_MUTE
+#define MIC_MUTE &kp LA(LG(LS(M)))
+#define CAM_MUTE &kp LA(LG(LS(C)))
+#define BLUR &kp LA(LG(LS(B)))
 #define REPEAT &key_repeat
 
 #define __THUMBS__ &mo NUM &kp SPACE &mo NAV &sl SYM &kp E &mo WMM
@@ -75,8 +78,8 @@
 
 
 #define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_UP
-#define __WMM____L2__ __CALLUM_L__                             &mkp LCLK
-#define __WMM____L3__ &none       &none        &none        &none        &none
+#define __WMM____L2__ __CALLUM_L__                                               &mkp LCLK
+#define __WMM____L3__ &kp C_PREV     &none        &kp C_PP       &kp C_NEXT      &none
 
 #define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
 #define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
