@@ -1,3 +1,4 @@
+# dirs.mk is a gitignored file with locations of zmk dir, and zmk-config dir
 include dirs.mk
 
 .PHONY: quick
