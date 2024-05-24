@@ -14,6 +14,17 @@
 #define HSH RA(N3)
 #define SILCROW RA(N6)
 
+/* home row mods for mod-taps */
+/* first letter is the mod, second letter the letter it replaces */
+#define CR LCTRL R
+#define AS LALT S
+#define GTee LGUI T
+#define SH LSHIFT H
+#define SN LSHIFT N
+#define GA LGUI A
+#define AI LALT I
+#define CO LCTRL O
+
 #define Y_ZOOM &kp LC(LA(LG(Y)))
 #define Y_WARP_L &kp LC(LA(LG(U)))
 #define Y_WARP_D &kp LC(LA(LG(I)))
@@ -42,11 +53,11 @@
 
 
 #define __APTMAK_L1__ REPEAT    &kp W     &kp F     &kp P     &kp B
-#define __APTMAK_L2__ &kp R     &kp S     &kp T     &kp H     &kp RET
+#define __APTMAK_L2__ &mt CR    &mt AS    &mt GTee  &mt SH    &kp RET
 #define __APTMAK_L3__ &kp FSLH  &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
-#define __APTMAK_R2__ &bspc_del &kp N     &kp A     &kp I     &kp O
+#define __APTMAK_R2__ &bspc_del &mt SN    &mt GA    &mt AI    &mt CO
 #define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp MINUS
 
 
