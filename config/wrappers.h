@@ -53,11 +53,11 @@
 
 
 #define __APTMAK_L1__ REPEAT    &kp W     &kp F     &kp P     &kp B
-#define __APTMAK_L2__ &mt CR    &mt AS    &mt GTee  &mt SH    &kp RET
+#define __APTMAK_L2__ &hm CR    &hm AS    &hm GTee  &hm SH    &kp RET
 #define __APTMAK_L3__ &kp FSLH  &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
-#define __APTMAK_R2__ &bspc_del &mt SN    &mt GA    &mt AI    &mt CO
+#define __APTMAK_R2__ &bspc_del &hm SN    &hm GA    &hm AI    &hm CO
 #define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp MINUS
 
 
