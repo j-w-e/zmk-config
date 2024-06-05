@@ -88,7 +88,7 @@
 #define __SYM____R3__ &kp TILDE  &kp CARET &leader   &nrc      &mne
 
 
-#define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_UP
+#define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_UP
 #define __WMM____L2__ __CALLUM_L__                                               &mkp LCLK
 #define __WMM____L3__ &kp C_PREV     &none        &kp C_PP       &kp C_NEXT      &none
 

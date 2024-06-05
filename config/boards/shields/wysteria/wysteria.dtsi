@@ -21,11 +21,7 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
-        /* I will need to add this line
-         * when I pull an updated ZMK
-         * but I'm not adding it currently, because upstream ZMK hasn't merged mousewheel support yet
-         */
-        /* wakeup-source; */
+        wakeup-source;
 
         diode-direction = "col2row";
         row-gpios

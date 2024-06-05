@@ -16,7 +16,7 @@
           slow-release; \
         };
 
-#define U_MOUSE_SCROLL_MAX 200      // 10
+/* #define U_MOUSE_SCROLL_MAX 200      // 10
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
@@ -26,6 +26,8 @@
 #define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
+
+*/
 
 /* #define MACRO(NAME, BINDINGS) \ */
 /*     macro_##NAME: macro_##NAME { \ */
@@ -119,7 +121,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_MOUSE";
             #sensor-binding-cells = <2>;
-            bindings = <&mwh>, <&mwh>;
+            bindings = <&msc>, <&msc>;
         };
 
     };
@@ -313,7 +315,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_mwh SCROLL_DOWN SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_mwh SCRL_DOWN SCRL_UP>;
         };
 
         nav_layer {
@@ -324,7 +326,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&rot_mwh SCROLL_LEFT SCROLL_RIGHT &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&rot_mwh SCRL_LEFT SCRL_RIGHT &inc_dec_kp PG_DN PG_UP>;
         };
 
         num_layer {
@@ -335,7 +337,7 @@
                                        __THUMBS__
             >;
 
-            sensor-bindings = <&rot_mwh SCROLL_LEFT SCROLL_RIGHT &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&rot_mwh SCRL_LEFT SCRL_RIGHT &inc_dec_kp PG_DN PG_UP>;
         };
 
         sym_layer {
