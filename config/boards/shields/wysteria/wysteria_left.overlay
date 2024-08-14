@@ -1,9 +1,5 @@
 #include "wysteria.dtsi"
 
-nice_view_spi: &spi0 {
-        cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
-
 &kscan0 {
     col-gpios
         = <&pro_micro 20 GPIO_ACTIVE_HIGH>
