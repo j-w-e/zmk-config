@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include "wrappers.h"
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -75,7 +75,7 @@
       };
       wd_bspc_del: word_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
+            label = "WD_BACKSPACE_DELETE";
             #binding-cells = <0>;
             bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -320,6 +320,7 @@
                                        __THUMBS__
             >;
 
+            /*sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp SCRL_DOWN SCRL_UP>;*/
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_mwh SCRL_DOWN SCRL_UP>;
         };
 

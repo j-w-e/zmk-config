@@ -57,7 +57,7 @@
 #define __APTMAK_L3__ &kp FSLH  &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
-#define __APTMAK_R2__ &bspc_del &hm SN    &hm GA    &hm AI    &hm CO
+#define __APTMAK_R2__ &kp BSPC  &hm SN    &hm GA    &hm AI    &hm CO // This should have &bspc_del but that doesn't seem to work
 #define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp MINUS
 
 
@@ -90,7 +90,7 @@
 
 #define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_UP
 #define __WMM____L2__ __CALLUM_L__                                               &mkp LCLK
-#define __WMM____L3__ &kp C_PREV     &none        &kp C_PP       &kp C_NEXT      &none
+#define __WMM____L3__ &kp C_PREV     &none        &kp C_PP       &kp C_NEXT      &msc SCRL_DOWN
 
 #define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
 #define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
