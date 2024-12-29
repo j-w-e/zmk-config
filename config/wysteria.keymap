@@ -127,6 +127,7 @@
             label = "ENC_MOUSE";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+            tap-ms = <200>;
         };
 
     };
