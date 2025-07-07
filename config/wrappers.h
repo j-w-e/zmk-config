@@ -63,7 +63,7 @@
 
 #define __NAV____L1__ &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V)  &kp LG(Y)
 #define __NAV____L2__ __CALLUM_L__                             &kp RET
-#define __NAV____L3__ &swap     &swap_app &kp ESC   &kp TAB    &LS(TAB)
+#define __NAV____L3__ &swap     &swap_app &kp ESC   &kp TAB    &kp LS(TAB)
 
 #define __NAV____R1__ &none     &none     &none     &none     &none    // Add back the LA(arrows)?
 #define __NAV____R2__ &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
