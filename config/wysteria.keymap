@@ -156,6 +156,7 @@
             COMBO(ent, 25, &kp RET, 5 6)
             COMBO(htor, 50, &htor, 10 13)
             COMBO(dssr, 50, &dssr, 11 23)
+            COMBO(pfv, 50, &pfv, 3 27)
     };
 
     conditional_layers {
@@ -213,16 +214,28 @@
                     , <&macro_tap      &kp R>
                     , <&macro_release  &kp LSHFT>;
                 )
+        ZMK_MACRO(pfv,
+                wait-ms = <5>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_press    &kp LSHFT>
+                    , <&macro_tap      &kp P>
+                    , <&macro_release  &kp LSHFT>
+                    , <&macro_tap      &kp F>
+                    , <&macro_press    &kp LSHFT>
+                    , <&macro_tap      &kp V>
+                    , <&macro_release  &kp LSHFT>;
+                )
         ZMK_MACRO(dssr,
                 wait-ms = <5>;
                 tap-ms = <5>;
                 bindings
                     = <&macro_press    &kp LSHFT>
-                    , <&macro_tap      &kp D &kp S>
+                    , <&macro_tap      &kp S &kp R>
                     , <&macro_release  &kp LSHFT>
                     , <&macro_tap      &kp FSLH>
                     , <&macro_press    &kp LSHFT>
-                    , <&macro_tap      &kp S &kp R>
+                    , <&macro_tap      &kp D &kp S>
                     , <&macro_release  &kp LSHFT>;
                 )
         ZMK_MACRO(pass,

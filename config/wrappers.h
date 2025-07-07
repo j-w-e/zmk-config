@@ -63,7 +63,7 @@
 
 #define __NAV____L1__ &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V)  &kp LG(Y)
 #define __NAV____L2__ __CALLUM_L__                             &kp RET
-#define __NAV____L3__ &swap     &swap_app &kp ESC   &kp TAB    &none
+#define __NAV____L3__ &swap     &swap_app &kp ESC   &kp TAB    &LS(TAB)
 
 #define __NAV____R1__ &none     &none     &none     &none     &none    // Add back the LA(arrows)?
 #define __NAV____R2__ &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
@@ -96,7 +96,7 @@
 #define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
 #define __WMM____R3__ Y_CENTRE Y_WIN_L   Y_WIN_D     Y_WIN_U    Y_WIN_R
 
-#define __SET____L1__ &bt BT_CLR  &none        &none        &none        &bootloader
+#define __SET____L1__ &bootloader  &none        &none        &none       &bt BT_CLR
 #define __SET____L2__ __CALLUM_L__                                       &lock
 #define __SET____L3__ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_TOG &none
 
