@@ -157,6 +157,8 @@
             COMBO(htor, 50, &htor, 10 13)
             COMBO(dssr, 50, &dssr, 11 23)
             COMBO(pfv, 50, &pfv, 3 27)
+            COMBO(ltab, 50, &kp TAB, 33 34)
+            COMBO(rtab, 50, &kp TAB, 35 36)
     };
 
     conditional_layers {
@@ -191,7 +193,7 @@
                 tap-ms = <20>;
                 bindings
                     = <&macro_press    &kp LSHFT>
-                    , <&macro_tap      &kp M &kp E &kp L>
+                    , <&macro_tap      &kp M &kp E &kp A &kp L>
                     , <&macro_release  &kp LSHFT>;
                 )
         ZMK_MACRO(screenshot,
