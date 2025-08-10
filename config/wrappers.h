@@ -88,13 +88,13 @@
 #define __SYM____R3__ &kp TILDE  &kp CARET &leader   &nrc      &mne
 
 
-#define __WMM____L1__ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_UP
-#define __WMM____L2__ __CALLUM_L__                                               &mkp LCLK
-#define __WMM____L3__ &kp C_PREV     &none        &kp C_PP       &kp C_NEXT      &msc SCRL_DOWN
+#define __WMM____L1__ &kp LC(LA(Q))       &kp LC(LA(W))       &kp LC(LA(E))      &kp LC(LA(R))       &kp LC(LA(T))
+#define __WMM____L2__ &mt RCTRL LC(LA(A)) &mt LALT LC(LA(S))  &mt LCMD LC(LA(D)) &mt LSHFT LC(LA(F)) &kp LC(LA(G))
+#define __WMM____L3__ &kp LC(LA(Z))       &kp LC(LA(X))       &kp LC(LA(C))      &kp LC(LA(V))       &kp LC(LA(B))
 
-#define __WMM____R1__ Y_ZOOM   Y_WARP_L  Y_WARP_D    Y_WARP_U   Y_WARP_R
-#define __WMM____R2__ Y_TOGGL  Y_SPC_L   Y_APPWIN    Y_M_CTL    Y_SPC_R
-#define __WMM____R3__ Y_CENTRE Y_WIN_L   Y_WIN_D     Y_WIN_U    Y_WIN_R
+#define __WMM____R1__ &kp LC(LA(Y))       &kp LC(LA(U))       &kp LC(LA(I))      &kp LC(LA(O))       &kp LC(LA(P))
+#define __WMM____R2__ &kp LC(LA(H))       &mt LSHFT LC(LA(J)) &mt LCMD LC(LA(K)) &mt LALT LC(LA(L))  &mt RCTRL LC(LA(SEMI))
+#define __WMM____R3__ &kp LC(LA(N))       &kp LC(LA(M))       &kp LC(LA(COMMA))  &kp LC(LA(DOT))     &kp LC(LA(SLASH))
 
 #define __SET____L1__ &bootloader  &none        &none        &none       &bt BT_CLR
 #define __SET____L2__ __CALLUM_L__                                       &lock
