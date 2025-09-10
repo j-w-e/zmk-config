@@ -48,6 +48,7 @@
 #define REPEAT &key_repeat
 
 #define __THUMBS__ &mo NUM &kp SPACE &mo NAV &sl SYM &kp E &mo WMM
+#define __WM_thumbs__ &mo NUM &kp LC(LA(SPACE)) &mo NAV &sl SYM &kp E &mo WMM
 #define __CALLUM_L__ &skq LCTRL  &skq LALT &skq LGUI &skq LSHFT
 #define __CALLUM_R__ &skq LSHFT  &skq LGUI &skq LALT &skq LCTRL
 

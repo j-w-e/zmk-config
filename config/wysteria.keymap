@@ -378,7 +378,7 @@
                           __WMM____L1__           __WMM____R1__
                           __WMM____L2__           __WMM____R2__
                           __WMM____L3__ MUTE MUTE __WMM____R3__
-                                       __THUMBS__
+                                       __WM_thumbs__
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
