@@ -58,7 +58,7 @@
 #define __APTMAK_L3__ &kp FSLH  &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
-#define __APTMAK_R2__ &kp BSPC  &hm SN    &hm GA    &hm AI    &hm CO // This should have &bspc_del but that doesn't seem to work
+#define __APTMAK_R2__ &bspc_del &hm SN    &hm GA    &hm AI    &hm CO // This should have &bspc_del but that doesn't seem to work
 #define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp MINUS
 
 
@@ -67,7 +67,7 @@
 #define __NAV____L3__ &swap     &swap_app &kp ESC   &kp TAB    &kp LS(TAB)
 
 #define __NAV____R1__ &none     &none     &none     &none     &none    // Add back the LA(arrows)?
-#define __NAV____R2__ &kp BSPC  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
+#define __NAV____R2__ &wd_bspc_del &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
 #define __NAV____R3__ &none     &none     &none     &none     &none    // Add back the LG(arrows)?
 
 
