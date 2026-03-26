@@ -75,9 +75,9 @@
 #define __NUM____L2__ __CALLUM_L__                             &kp RET
 #define __NUM____L3__ &kp LS(LC(TAB)) &kp LC(TAB) &kp ESC &kp TAB &comma
 
-#define __NUM____R1__ &kp MINUS  &kp N7    &kp N8    &kp N9    &kp EQUAL
+#define __NUM____R1__ &kp PLUS   &kp N7    &kp N8    &kp N9    &kp EQUAL
 #define __NUM____R2__ &bspc_del  &kp N4    &kp N5    &kp N6    &kp N0
-#define __NUM____R3__ &dot       &kp N1    &kp N2    &kp N3    &kp PLUS
+#define __NUM____R3__ &dot       &kp N1    &kp N2    &kp N3    &kp MINUS
 
 
 #define __SYM____L1__ &kp FSLH   &kp LBRC  &kp LPAR  &kp LBKT  &kp LT   // Need to think about what goes on inner index key
