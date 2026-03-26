@@ -58,7 +58,7 @@
 #define __APTMAK_L3__ &kp FSLH  &kp C     &kp G     &kp D     &kp K
 
 #define __APTMAK_R1__ &kp J     &kp L     &kp U     &kp Y     &kp SQT
-#define __APTMAK_R2__ &bspc_del &hm SN    &hm GA    &hm AI    &hm CO // This should have &bspc_del but that doesn't seem to work
+#define __APTMAK_R2__ &bspc_del &hm SN    &hm GA    &hm AI    &hm CO
 #define __APTMAK_R3__ &kp V     &kp M     &comma    &dot      &kp MINUS
 
 
@@ -66,12 +66,12 @@
 #define __NAV____L2__ __CALLUM_L__                             &kp RET
 #define __NAV____L3__ &swap     &swap_app &kp ESC   &kp TAB    &kp LS(TAB)
 
-#define __NAV____R1__ &none     &none     &none     &none     &none    // Add back the LA(arrows)?
+#define __NAV____R1__ &none     &none     &none     &none     &none
 #define __NAV____R2__ &wd_bspc_del &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-#define __NAV____R3__ &none     &none     &none     &none     &none    // Add back the LG(arrows)?
+#define __NAV____R3__ &none     &none     &none     &none     &none
 
 
-#define __NUM____L1__ &kp E      &none     &kp PIPE  &kp SILCROW &kp SPACE   // Need to think about what goes here
+#define __NUM____L1__ &kp E      &none     &kp PIPE  &kp SILCROW &kp SPACE
 #define __NUM____L2__ __CALLUM_L__                             &kp RET
 #define __NUM____L3__ &kp LS(LC(TAB)) &kp LC(TAB) &kp ESC &kp TAB &comma
 
@@ -80,12 +80,12 @@
 #define __NUM____R3__ &dot       &kp N1    &kp N2    &kp N3    &kp MINUS
 
 
-#define __SYM____L1__ &kp FSLH   &kp LBRC  &kp LPAR  &kp LBKT  &kp LT   // Need to think about what goes on inner index key
+#define __SYM____L1__ &kp FSLH   &kp LBRC  &kp LPAR  &kp LBKT  &kp LT
 #define __SYM____L2__ &kp HSH    &kp ASTRK &kp EXCL  &kp QMARK &none   // Need to think about what goes on inner index key
 #define __SYM____L3__ &kp PRCNT  &kp AT    &kp DLLR  &kp AMPS  &kp GRAVE
 
-#define __SYM____R1__ &kp GT     &kp RBKT  &kp RPAR  &kp RBRC  &kp BSLH  // Need to think about what goes on inner index key
-#define __SYM____R2__ &kp LA(BSPC)      __CALLUM_R__                          // Need to add macro for word delete
+#define __SYM____R1__ &kp GT     &kp RBKT  &kp RPAR  &kp RBRC  &kp BSLH
+#define __SYM____R2__ &kp LA(BSPC)      __CALLUM_R__
 #define __SYM____R3__ &kp TILDE  &kp CARET &leader   &nrc      &mne
 
 
